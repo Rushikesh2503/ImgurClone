@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/15707e82f8.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="index.css" />
+    <title>ImgurClone</title>
+  </head>
+  <body>
+    <div class="headDivMain" id="navHead">
+      <nav>
+        <div class="navMainDiv">
+          <div class="imgLogoDiv">
+            <img
+              src="./logo/logo.svg"
+              alt="imgurLogo"
+              class="imgLogo"
+            />
+          </div>
+          <button class="postingbtnDiv">
+            <div class="heavyplusDiv">
+              <i class="fas fa-plus"></i>
+            </div>
+            <span>New Post</span>
+          </button>
+          <div class="searchSideDiv">
+            <input
+              type="text"
+              id="searchingInp"
+              placeholder="Images , # tags,@users oh my!"
+            />
+            <button id="searchingBtn" >
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+          <div class="rightSideDiv">
+            <div>
+              <i class="fas fa-award"></i>
+            </div>
+            <div class="adfreebtnDiv">
+              <button id="adfreebtn">Go Ad-Free</button>
+            </div>
+            <div class="signsbtnDiv">
+              <button id="signupbtn">SignUp</button>
+              <button id="signinbtn">SignIn</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <section class="centHTagtop">
+        <h1>You're breathtaking!</h1>
+      </section>
+      <section class="tagsFoldersSec">
+        <div>
+          <div class="filteredSec3">
+            <div><span>EXPLORE TAGS</span></div>
+            <div><span>MORE TAGS +</span></div>
+          </div>
+          <div class="tagsSecCards">
+            <div>
+               <img src="https://images.unsplash.com/photo-1453614512568-c4024d13c247?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyNDM1MzF8MHwxfHNlYXJjaHwxNXx8Y2FmZXxlbnwwfHx8fDE2MzQwMzM5MTA&ixlib=rb-1.2.1&q=80&w=1080" alt="img" class="tagsSecImg"/>
+               <p class="descriptionPTag">Anything</p>
+            </div>
+            <div>
+               <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyNDM1MzF8MHwxfHNlYXJjaHwxfHxjYWZlfGVufDB8fHx8MTYzNDAzMzkxMA&ixlib=rb-1.2.1&q=80&w=1080" alt="img" class="tagsSecImg"/>
+               <p class="descriptionPTag">Anything</p>
+            </div>
+            <div>
+               <img src="https://images.unsplash.com/photo-1453614512568-c4024d13c247?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyNDM1MzF8MHwxfHNlYXJjaHwxNXx8Y2FmZXxlbnwwfHx8fDE2MzQwMzM5MTA&ixlib=rb-1.2.1&q=80&w=1080" alt="img" class="tagsSecImg"/>
+               <p class="descriptionPTag">Anything</p>
+            </div>
+            <div>
+               <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyNDM1MzF8MHwxfHNlYXJjaHwxfHxjYWZlfGVufDB8fHx8MTYzNDAzMzkxMA&ixlib=rb-1.2.1&q=80&w=1080" alt="img" class="tagsSecImg"/>
+               <p class="descriptionPTag">Anything</p>
+            </div>
+            <div>
+               <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyNDM1MzF8MHwxfHNlYXJjaHwxfHxjYWZlfGVufDB8fHx8MTYzNDAzMzkxMA&ixlib=rb-1.2.1&q=80&w=1080" alt="img" class="tagsSecImg"/>
+               <p class="descriptionPTag">Anything</p>
+            </div>
+            <div>
+               <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyNDM1MzF8MHwxfHNlYXJjaHwxfHxjYWZlfGVufDB8fHx8MTYzNDAzMzkxMA&ixlib=rb-1.2.1&q=80&w=1080" alt="img" class="tagsSecImg"/>
+               <p class="descriptionPTag">Anything</p>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+    <div class="container2">
+      <div class="filteredSec1">
+        <div><span>Most Viral</span><i class="fas fa-chevron-down"></i></div>
+
+        <div class="filteredSec2">
+          <div><span>Newest</span><i class="fas fa-chevron-down"></i></div>
+          <i class="fas fa-bars"></i>
+          <i class="fas fa-play-circle"></i>
+          <i class="fas fa-th-large"></i>
+        </div>
+      </div>
+    </div>
+    <div class="BelowMainGrid">
+      <div id="imgShowBox" class="imgShowBoxCl">
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
