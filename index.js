@@ -2,9 +2,14 @@ let inVal = document.getElementById("searchingInp");
 inVal.addEventListener("keypress", onInpuChange);
 // console.log("inVal:", inVal.value);
 let scrollCheck = true;
+
 if (inVal.value == "" || !inVal.value) {
   inVal = "cafe";
 }
+
+let searchOnBtn = document.getElementById("searchingBtn");
+searchOnBtn.addEventListener("click", showData);
+
 let currpage = 1;
 
 let url = `https://api.unsplash.com/search/photos?query=${inVal}&page=${currpage}&client_id=bpSvSrKX3yyNF9cOHRj_Atov2wi5DzBSFOj0dzqrEPo`;
@@ -47,7 +52,7 @@ function showDataWithCard(data) {
   let mainImgDiv = document.getElementById("imgShowBox");
   let content = ``;
   data?.map((el) => {
-    //   console.log('el:', el)
+    // console.log("el:", el.alt_description);
     content += `
     <div class="imgsOfCard">
         <div>
@@ -55,7 +60,9 @@ function showDataWithCard(data) {
         </div>
         <div>
             <p class="descriptionPTag">${
-              el.alt_description == "null" ? "ImageFromApi" : el.alt_description
+              el.alt_description == null
+                ? "Image From Source"
+                : el.alt_description
             }</p>
         </div>
         <div class="symbolsDn">
